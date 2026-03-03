@@ -238,18 +238,15 @@ function FormCopy({
 
         {/* Line 3 */}
         <div className="form-row">
-          <span className="text-normal">my consent to</span>
-          <span className="blank" style={{ width: "480px" }}></span>
-          <span className="text-normal">for the use</span>
+          <span className="text-normal">my consent to </span>
+          <span className="text-normal"><strong>Clark Development Corporation - Clinical Laboratory</strong></span>
+          <span className="text-normal"> for the use of my</span>
         </div>
         {/* Label row */}
-        <div className="label-row" style={{ justifyContent: "center" }}>
-          <span className="field-label">Name of Yakap Package Provider (YPP)</span>
-        </div>
-
+        
         {/* Paragraph lines */}
         <p className="form-para">
-          of my photo or picture as one of the requirements in the availment of Konsulta benefit.
+           photo or picture as one of the requirements in the availment of Konsulta benefit.
         </p>
         <p className="form-para indent">
           By signing below, I hereby authorize my Konsulta facility to save my photo for postaudit monitoring purposes of PhilHealth.

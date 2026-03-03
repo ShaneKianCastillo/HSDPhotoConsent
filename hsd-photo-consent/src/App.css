@@ -268,14 +268,14 @@ body {
   margin-bottom: 4px;
 }
 
-.form-para.indent { text-indent: 2em; }
+.form-para.indent { text-indent: 2em; margin-top: 20px;}
 
 /* Signature Row */
 .signature-row {
   display: flex;
   justify-content: space-between;
   gap: 14px;
-  margin-top: 16px;
+  margin-top: 50px;
   margin-bottom: 6px;
 }
 
@@ -527,7 +527,7 @@ body {
 @media print {
   @page {
     size: legal portrait;
-    margin: 0;
+    margin: 10mm;
   }
 
   body { background: white !important; margin: 0; padding: 0; }
@@ -542,16 +542,20 @@ body {
   .main-content {
     padding: 0 !important;
     margin: 0 !important;
+    display: block !important;
   }
 
   .form-container {
     box-shadow: none !important;
     border-radius: 0 !important;
-    /* Scale down slightly so both copies fit on one legal page */
-    width: 100vw !important;
-    padding: 10mm 14mm !important;
+    padding: 0 !important;
     margin: 0 !important;
-    transform-origin: top left;
+    width: 100% !important;
+    /* Scale down to fit safely inside any printer's margins */
+    transform: scale(0.90);
+    transform-origin: top center;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   .photo-placeholder {
@@ -560,6 +564,6 @@ body {
   }
 
   .cut-line {
-    margin: 6px 0 !important;
+    margin: 4px 0 !important;
   }
 }
