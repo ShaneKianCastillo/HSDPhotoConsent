@@ -216,10 +216,10 @@ function FormCopy({
       <div className="form-body">
         {/* Line 1 */}
         <div className="form-row">
-          <span className="text-normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I,</span>
-          <span className="blank" style={{ width: "350px" }}></span>
+          <span className="text-normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I,</span>
+          <span className="blank" style={{ width: "75mm" }}></span>
           <span className="text-normal">, with address</span>
-          <span className="blank" style={{ width: "151px" }}></span>
+          <span className="blank" style={{ width: "50mm" }}></span>
         </div>
         {/* Label row */}
         <div className="label-row">
@@ -228,7 +228,7 @@ function FormCopy({
 
         {/* Line 2 */}
         <div className="form-row">
-          <span className="blank" style={{ width: "480px" }}></span>
+          <span className="blank" style={{ width: "110mm" }}></span>
           <span className="text-normal">grant permission and give</span>
         </div>
         {/* Label row */}
@@ -236,21 +236,13 @@ function FormCopy({
           <span className="field-label">Address of Yakap Beneficiary</span>
         </div>
 
-        {/* Line 3 */}
-        <div className="form-row">
-          <span className="text-normal">my consent to </span>
-          <span className="text-normal"><strong>Clark Development Corporation - Clinical Laboratory</strong></span>
-          <span className="text-normal"> for the use of my</span>
-        </div>
-        {/* Label row */}
-        
-        {/* Paragraph lines */}
-        <p className="form-para">
-           photo or picture as one of the requirements in the availment of Konsulta benefit.
-        </p>
-        <p className="form-para indent">
-          By signing below, I hereby authorize my Konsulta facility to save my photo for postaudit monitoring purposes of PhilHealth.
-        </p>
+        {/* Line 3 + paragraph as one continuous block */}
+          <p className="form-para">
+            my consent to <strong>Clark Development Corporation - Clinical Laboratory</strong> for the use of my photo or picture as one of the requirements in the availment of Konsulta benefit.
+          </p>
+          <p className="form-para indent">
+            By signing below, I hereby authorize my Konsulta facility to save my photo for postaudit monitoring purposes of PhilHealth.
+          </p>
       </div>
 
       <div className="signature-row">

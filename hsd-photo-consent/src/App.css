@@ -227,6 +227,7 @@ body {
   gap: 0 4px;
   margin-bottom: 0px;
   line-height: 1.8;
+  width: 100%;
 }
 
 .text-normal {
@@ -250,7 +251,7 @@ body {
   display: flex;
   margin-top: 0px;
   margin-bottom: 4px;
-  padding-left: 125px;
+  padding-left: 20mm;
 }
 
 .field-label {
@@ -524,10 +525,11 @@ body {
 }
 
 /* ── PRINT ── */
+/* ── PRINT ── */
 @media print {
   @page {
     size: legal portrait;
-    margin: 10mm;
+    margin: 8mm 10mm;
   }
 
   body { background: white !important; margin: 0; padding: 0; }
@@ -548,14 +550,54 @@ body {
   .form-container {
     box-shadow: none !important;
     border-radius: 0 !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    width: 100% !important;
-    /* Scale down to fit safely inside any printer's margins */
-    transform: scale(0.90);
-    transform-origin: top center;
+    margin: 0 auto !important;
+    width: 190mm !important;
+    padding: 8mm 12mm !important;
+    transform: none !important;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
+  }
+
+  .form-page {
+    font-size: 12pt !important;
+  }
+
+  /* Fix text alignment in print to match web */
+  .form-row {
+    display: flex !important;
+    align-items: flex-end !important;
+    flex-wrap: wrap !important;
+  }
+
+  .form-para {
+    text-align: justify !important;
+  }
+
+  .form-para.indent {
+    text-indent: 2em !important;
+    margin-top: 8px !important;
+  }
+
+  .form-title {
+    margin-top: -80px !important;
+    margin-bottom: 60px !important;
+    text-align: center !important;
+  }
+
+  .form-note {
+    margin-top: 20px !important;
+  }
+
+  .signature-row {
+    margin-top: 24px !important;
+  }
+
+  .logo-clark {
+    height: 60px !important;
+  }
+
+  .logo-yakap {
+    height: 85px !important;
   }
 
   .photo-placeholder {
@@ -564,6 +606,8 @@ body {
   }
 
   .cut-line {
-    margin: 4px 0 !important;
+    margin: 6px 0 !important;
   }
+
+  
 }
