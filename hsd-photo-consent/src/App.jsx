@@ -1,5 +1,5 @@
 import { useState, useRef, useCallback } from "react";
-import clarkLogo from "./assets/clark-logo.png";
+import clarkLogo from "./assets/cdc-logo.png";
 import yakapLogo from "./assets/yakap-logo.png";
 import PhotoModal from "./components/PhotoModal";
 import "./App.css";
